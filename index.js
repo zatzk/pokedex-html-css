@@ -1,22 +1,23 @@
-const listSelecaoPokemons = document.querySelectorAll('.pokemon') // seleciona todos os elementos com a classe pokemon
-const pokemonsCard = document.querySelectorAll('.cartao-pokemon') // seleciona todos os elementos com a classe cartao-pokemon
+const listPokemonSelect = document.querySelectorAll('.pokemon') // seleciona todos os elementos com a classe pokemon
+const pokemonsCard = document.querySelectorAll('.pokemon-card') // seleciona todos os elementos com a classe cartao-pokemon
 
-listSelecaoPokemons.forEach(pokemon => { // para cada elemento da lista de seleção de pokemons
+listPokemonSelect.forEach(pokemon => { // para cada elemento da lista de seleção de pokemons
   pokemon.addEventListener('click', () => { // adiciona um evento de click
-    const cartaoPokemonAberto = document.querySelector('.aberto') // seleciona o primeiro elemento com a classe aberto
-    cartaoPokemonAberto.classList.remove('aberto') // remove a classe aberto do primeiro elemento com a classe aberto
+    const openPokemonCard = document.querySelector('.open') // seleciona o primeiro elemento com a classe open
+    openPokemonCard.classList.remove('open') // remove a classe open do primeiro elemento com a classe open
 
 
-    const idPokemonSelecionado = pokemon.attributes.id.value // pega o valor do atributo id do elemento selecionado
+    const pokemonSelectedID = pokemon.attributes.id.value // pega o valor do atributo id do elemento selecionado
 
-    const cartaoPokemonParaAbrir = document.getElementById('cartao-' + idPokemonSelecionado) // seleciona o elemento com o id cartao-idPokemonSelecionado
-    cartaoPokemonParaAbrir.classList.add('aberto') // adiciona a classe aberto ao elemento selecionado
+    const pokemonCardOpen = document.getElementById('card-' + pokemonSelectedID) // seleciona o elemento com o id cartao-pokemon-id
+    pokemonCardOpen.classList.add('open') // adiciona a classe open ao elemento selecionado
 
 
-    const pokemonAtivoNaListagem = document.querySelector('.ativo') // seleciona o primeiro elemento com a classe ativo
-    pokemonAtivoNaListagem.classList.remove('ativo') // remove a classe ativo do primeiro elemento com a classe ativo
+    const pokemonListingActive = document.querySelector('.active') // seleciona o primeiro elemento com a classe active
+    pokemonListingActive.classList.remove('active') // remove a classe active do primeiro elemento com a classe active
 
-    const pokemonSelecionadoNaListagem = document.getElementById(idPokemonSelecionado) // seleciona o elemento com o id idPokemonSelecionado
-    pokemonSelecionadoNaListagem.classList.add('ativo') // adiciona a classe ativo ao elemento selecionado
+    
+    const pokemonSelectedOnListing = document.getElementById(pokemonSelectedID) // seleciona o elemento com o id pokemonSelectedID
+    pokemonSelectedOnListing.classList.add('active') // adiciona a classe active ao elemento selecionado
   })
 })

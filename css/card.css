@@ -1,16 +1,16 @@
-.cartao-pokemon {
+.pokemon-card {
   display: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
-.cartao-pokemon .cartao-topo {
+.pokemon-card .card-top {
   padding: 30px 40px 0;
 }
 
-.cartao-pokemon .nome {
+.pokemon-card .name {
   margin-bottom: 5px;
 }
-.cartao-pokemon .tipo {
+.pokemon-card .type {
   font-size: 12px;
   background-color: #FFFFFF;
   opacity: 0.7;
@@ -18,23 +18,23 @@
   padding: 2px 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.cartao-pokemon .detalhes {
+.pokemon-card .details {
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cartao-pokemon .cartao-imagem {
+.pokemon-card .card-img {
     width: 350px;
     height: 350px;
 }
 
-.cartao-pokemon img {
+.pokemon-card img {
     max-height: 100%;
 }
 
-.cartao-pokemon .cartao-informacoes {
+.pokemon-card .card-info {
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
@@ -44,48 +44,48 @@
     border-bottom-right-radius: 8px;
 }
 
-.cartao-pokemon .cartao-informacoes h3 {
+.pokemon-card .card-info h3 {
     font-size: 20px;
     margin-bottom: 15px;
     border-bottom: 1px solid #6B727A;
 }
 
-.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades {
+.pokemon-card .card-info .status, .pokemon-card .card-info .moves {
     padding: 0 10px;
     width: 180px;
 }
 
-.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li {
+.pokemon-card .card-info .moves ul li, .pokemon-card .card-info .status ul li {
     border-bottom: 1px solid #C3C4C5;
     padding: 0 0 5px;
     margin-bottom: 5px;
     font-size: 15px;
 }
 
-.cartao-pokemon.aberto {
+.pokemon-card.open {
     display: block;
 }
 
-.tipo-fogo {
+.type-fire {
     background-color: #ED8A8B;
 }
 
-.tipo-eletrico {
+.type-electric {
     background-color: #FCC719;
 }
 
-.tipo-agua {
+.type-water {
     background-color: #76BEFE;
 }
 
-.tipo-grama {
+.type-grass {
     background-color: #49D0B0;
 }
 
-.tipo-trevas {
+.type-ghost {
     background-color: #BA68C8;
 }
 
-.tipo-dragao {
+.type-dragon {
     background-color: #C29791;
 }

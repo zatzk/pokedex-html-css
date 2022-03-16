@@ -8,42 +8,42 @@
       padding: 30px 0;
   }
 
-  .cartao-pokemon {
+  .pokemon-card {
       max-width: 300px;
   }
 
-  .cartao-pokemon .cartao-imagem {
+  .pokemon-card .card-img {
       width: 200px;
       height: 200px;
   }
 
-  .cartao-pokemon .cartao-informacoes {
+  .pokemon-card .card-info {
       padding: 60px 30px 30px;
       margin-top: -50px;
   }
 
-  .cartao-pokemon .cartao-informacoes .informacoes {
+  .pokemon-card .card-info .info {
       display: flex;
       justify-content: space-between;
       padding: 0;
   }
 
-  .cartao-pokemon .cartao-informacoes h3 {
+  .pokemon-card .card-info h3 {
       font-size: 16px;
   }
 
-  .listagem {
+  .listing {
       max-width: 300px;
   }
 
-  .listagem ul {
+  .listing ul {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: space-between;
   }
 
-  .listagem .pokemon {
+  .listing .pokemon {
       width: 140px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -51,7 +51,7 @@
       border-radius: 8px;
   }
 
-  .listagem .pokemon span {
+  .listing .pokemon span {
       padding-right: 5px;
   }
 
